@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F0BCF320691A6500DFB08D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BCF220691A6500DFB08D /* AppDelegate.m */; };
+		12F0BCF620691A6500DFB08D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BCF520691A6500DFB08D /* ViewController.m */; };
+		12F0BCF920691A6500DFB08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BCF720691A6500DFB08D /* Main.storyboard */; };
+		12F0BCFB20691A6500DFB08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BCFA20691A6500DFB08D /* Assets.xcassets */; };
+		12F0BCFE20691A6500DFB08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BCFC20691A6500DFB08D /* LaunchScreen.storyboard */; };
+		12F0BD0120691A6500DFB08D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD0020691A6500DFB08D /* main.m */; };
+		12F0BD0B20691A6500DFB08D /* FLMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD0A20691A6500DFB08D /* FLMusicPlayerTests.m */; };
+		12F0BD1620691A6500DFB08D /* FLMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD1520691A6500DFB08D /* FLMusicPlayerUITests.m */; };
+		12F0BD2F20691BDC00DFB08D /* UIView+FLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD2E20691BDC00DFB08D /* UIView+FLCommon.m */; };
+		12F0BD3220691E4C00DFB08D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BD3120691E4C00DFB08D /* Default-568h@2x.png */; };
+		12F0BD3520691EF300DFB08D /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD3420691EF300DFB08D /* FLViewController.m */; };
+		12F0BD3D20691F5800DFB08D /* FLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD3B20691F5800DFB08D /* FLLoginViewController.m */; };
+		12F0BD3E20691F5800DFB08D /* FLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BD3C20691F5800DFB08D /* FLLoginViewController.xib */; };
+		12F0BD43206925C100DFB08D /* FLAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD42206925C100DFB08D /* FLAudioSession.m */; };
+		12F0BD472069358900DFB08D /* FLDataPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD462069358900DFB08D /* FLDataPath.m */; };
+		12F0BD4D2069391500DFB08D /* yzgf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BD4C2069391500DFB08D /* yzgf.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12F0BD0720691A6500DFB08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F0BCE620691A6500DFB08D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F0BCED20691A6500DFB08D;
+			remoteInfo = FLMusicPlayer;
+		};
+		12F0BD1220691A6500DFB08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F0BCE620691A6500DFB08D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F0BCED20691A6500DFB08D;
+			remoteInfo = FLMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12F0BCEE20691A6500DFB08D /* FLMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F0BCF120691A6500DFB08D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12F0BCF220691A6500DFB08D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12F0BCF420691A6500DFB08D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12F0BCF520691A6500DFB08D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12F0BCF820691A6500DFB08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12F0BCFA20691A6500DFB08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12F0BCFD20691A6500DFB08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12F0BCFF20691A6500DFB08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F0BD0020691A6500DFB08D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12F0BD0620691A6500DFB08D /* FLMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F0BD0A20691A6500DFB08D /* FLMusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMusicPlayerTests.m; sourceTree = "<group>"; };
+		12F0BD0C20691A6500DFB08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F0BD1120691A6500DFB08D /* FLMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F0BD1520691A6500DFB08D /* FLMusicPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMusicPlayerUITests.m; sourceTree = "<group>"; };
+		12F0BD1720691A6500DFB08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F0BD2D20691BDC00DFB08D /* UIView+FLCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FLCommon.h"; sourceTree = "<group>"; };
+		12F0BD2E20691BDC00DFB08D /* UIView+FLCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLCommon.m"; sourceTree = "<group>"; };
+		12F0BD3020691D9800DFB08D /* FLMusicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMusicHeader.h; sourceTree = "<group>"; };
+		12F0BD3120691E4C00DFB08D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12F0BD3320691EF300DFB08D /* FLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewController.h; sourceTree = "<group>"; };
+		12F0BD3420691EF300DFB08D /* FLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewController.m; sourceTree = "<group>"; };
+		12F0BD3A20691F5800DFB08D /* FLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLLoginViewController.h; sourceTree = "<group>"; };
+		12F0BD3B20691F5800DFB08D /* FLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLLoginViewController.m; sourceTree = "<group>"; };
+		12F0BD3C20691F5800DFB08D /* FLLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLLoginViewController.xib; sourceTree = "<group>"; };
+		12F0BD41206925C100DFB08D /* FLAudioSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAudioSession.h; sourceTree = "<group>"; };
+		12F0BD42206925C100DFB08D /* FLAudioSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAudioSession.m; sourceTree = "<group>"; };
+		12F0BD452069358900DFB08D /* FLDataPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLDataPath.h; sourceTree = "<group>"; };
+		12F0BD462069358900DFB08D /* FLDataPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLDataPath.m; sourceTree = "<group>"; };
+		12F0BD4C2069391500DFB08D /* yzgf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yzgf.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12F0BCEB20691A6500DFB08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0320691A6500DFB08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0E20691A6500DFB08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F0BCE520691A6500DFB08D = {
+			isa = PBXGroup;
+			children = (
+				12F0BD3120691E4C00DFB08D /* Default-568h@2x.png */,
+				12F0BCF020691A6500DFB08D /* FLMusicPlayer */,
+				12F0BD0920691A6500DFB08D /* FLMusicPlayerTests */,
+				12F0BD1420691A6500DFB08D /* FLMusicPlayerUITests */,
+				12F0BCEF20691A6500DFB08D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12F0BCEF20691A6500DFB08D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BCEE20691A6500DFB08D /* FLMusicPlayer.app */,
+				12F0BD0620691A6500DFB08D /* FLMusicPlayerTests.xctest */,
+				12F0BD1120691A6500DFB08D /* FLMusicPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F0BCF020691A6500DFB08D /* FLMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD4A206938D800DFB08D /* Src */,
+				12F0BCFF20691A6500DFB08D /* Info.plist */,
+				12F0BD2820691AA500DFB08D /* ViewController */,
+				12F0BD2720691AA000DFB08D /* View */,
+				12F0BD2620691A9A00DFB08D /* Model */,
+				12F0BD2520691A9500DFB08D /* Util */,
+				12F0BD2320691A8400DFB08D /* Other */,
+			);
+			path = FLMusicPlayer;
+			sourceTree = "<group>";
+		};
+		12F0BD0920691A6500DFB08D /* FLMusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD0A20691A6500DFB08D /* FLMusicPlayerTests.m */,
+				12F0BD0C20691A6500DFB08D /* Info.plist */,
+			);
+			path = FLMusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		12F0BD1420691A6500DFB08D /* FLMusicPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD1520691A6500DFB08D /* FLMusicPlayerUITests.m */,
+				12F0BD1720691A6500DFB08D /* Info.plist */,
+			);
+			path = FLMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		12F0BD2320691A8400DFB08D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BCF120691A6500DFB08D /* AppDelegate.h */,
+				12F0BCF220691A6500DFB08D /* AppDelegate.m */,
+				12F0BCF420691A6500DFB08D /* ViewController.h */,
+				12F0BCF520691A6500DFB08D /* ViewController.m */,
+				12F0BCF720691A6500DFB08D /* Main.storyboard */,
+				12F0BCFA20691A6500DFB08D /* Assets.xcassets */,
+				12F0BCFC20691A6500DFB08D /* LaunchScreen.storyboard */,
+				12F0BD0020691A6500DFB08D /* main.m */,
+				12F0BD3020691D9800DFB08D /* FLMusicHeader.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		12F0BD2520691A9500DFB08D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD442069356E00DFB08D /* Other */,
+				12F0BD3F2069256D00DFB08D /* Manager */,
+				12F0BD2920691B0800DFB08D /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		12F0BD2620691A9A00DFB08D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12F0BD2720691AA000DFB08D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F0BD2820691AA500DFB08D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD3620691F0D00DFB08D /* Login */,
+				12F0BD3320691EF300DFB08D /* FLViewController.h */,
+				12F0BD3420691EF300DFB08D /* FLViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		12F0BD2920691B0800DFB08D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD2D20691BDC00DFB08D /* UIView+FLCommon.h */,
+				12F0BD2E20691BDC00DFB08D /* UIView+FLCommon.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		12F0BD3620691F0D00DFB08D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD3A20691F5800DFB08D /* FLLoginViewController.h */,
+				12F0BD3B20691F5800DFB08D /* FLLoginViewController.m */,
+				12F0BD3C20691F5800DFB08D /* FLLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		12F0BD3F2069256D00DFB08D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD402069258900DFB08D /* FLAudioKit */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		12F0BD402069258900DFB08D /* FLAudioKit */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD41206925C100DFB08D /* FLAudioSession.h */,
+				12F0BD42206925C100DFB08D /* FLAudioSession.m */,
+			);
+			path = FLAudioKit;
+			sourceTree = "<group>";
+		};
+		12F0BD442069356E00DFB08D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD452069358900DFB08D /* FLDataPath.h */,
+				12F0BD462069358900DFB08D /* FLDataPath.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		12F0BD4A206938D800DFB08D /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD4B206938E100DFB08D /* Musics */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		12F0BD4B206938E100DFB08D /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				12F0BD4C2069391500DFB08D /* yzgf.mp3 */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F0BCED20691A6500DFB08D /* FLMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F0BD1A20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayer" */;
+			buildPhases = (
+				12F0BCEA20691A6500DFB08D /* Sources */,
+				12F0BCEB20691A6500DFB08D /* Frameworks */,
+				12F0BCEC20691A6500DFB08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLMusicPlayer;
+			productName = FLMusicPlayer;
+			productReference = 12F0BCEE20691A6500DFB08D /* FLMusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12F0BD0520691A6500DFB08D /* FLMusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F0BD1D20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerTests" */;
+			buildPhases = (
+				12F0BD0220691A6500DFB08D /* Sources */,
+				12F0BD0320691A6500DFB08D /* Frameworks */,
+				12F0BD0420691A6500DFB08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F0BD0820691A6500DFB08D /* PBXTargetDependency */,
+			);
+			name = FLMusicPlayerTests;
+			productName = FLMusicPlayerTests;
+			productReference = 12F0BD0620691A6500DFB08D /* FLMusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12F0BD1020691A6500DFB08D /* FLMusicPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F0BD2020691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerUITests" */;
+			buildPhases = (
+				12F0BD0D20691A6500DFB08D /* Sources */,
+				12F0BD0E20691A6500DFB08D /* Frameworks */,
+				12F0BD0F20691A6500DFB08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F0BD1320691A6500DFB08D /* PBXTargetDependency */,
+			);
+			name = FLMusicPlayerUITests;
+			productName = FLMusicPlayerUITests;
+			productReference = 12F0BD1120691A6500DFB08D /* FLMusicPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12F0BCE620691A6500DFB08D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FL;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "冯里";
+				TargetAttributes = {
+					12F0BCED20691A6500DFB08D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					12F0BD0520691A6500DFB08D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12F0BCED20691A6500DFB08D;
+					};
+					12F0BD1020691A6500DFB08D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12F0BCED20691A6500DFB08D;
+					};
+				};
+			};
+			buildConfigurationList = 12F0BCE920691A6500DFB08D /* Build configuration list for PBXProject "FLMusicPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12F0BCE520691A6500DFB08D;
+			productRefGroup = 12F0BCEF20691A6500DFB08D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F0BCED20691A6500DFB08D /* FLMusicPlayer */,
+				12F0BD0520691A6500DFB08D /* FLMusicPlayerTests */,
+				12F0BD1020691A6500DFB08D /* FLMusicPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12F0BCEC20691A6500DFB08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F0BCFE20691A6500DFB08D /* LaunchScreen.storyboard in Resources */,
+				12F0BD3E20691F5800DFB08D /* FLLoginViewController.xib in Resources */,
+				12F0BD4D2069391500DFB08D /* yzgf.mp3 in Resources */,
+				12F0BD3220691E4C00DFB08D /* Default-568h@2x.png in Resources */,
+				12F0BCFB20691A6500DFB08D /* Assets.xcassets in Resources */,
+				12F0BCF920691A6500DFB08D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0420691A6500DFB08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0F20691A6500DFB08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F0BCEA20691A6500DFB08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F0BD3D20691F5800DFB08D /* FLLoginViewController.m in Sources */,
+				12F0BD43206925C100DFB08D /* FLAudioSession.m in Sources */,
+				12F0BCF620691A6500DFB08D /* ViewController.m in Sources */,
+				12F0BD472069358900DFB08D /* FLDataPath.m in Sources */,
+				12F0BD0120691A6500DFB08D /* main.m in Sources */,
+				12F0BCF320691A6500DFB08D /* AppDelegate.m in Sources */,
+				12F0BD2F20691BDC00DFB08D /* UIView+FLCommon.m in Sources */,
+				12F0BD3520691EF300DFB08D /* FLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0220691A6500DFB08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F0BD0B20691A6500DFB08D /* FLMusicPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F0BD0D20691A6500DFB08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F0BD1620691A6500DFB08D /* FLMusicPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12F0BD0820691A6500DFB08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F0BCED20691A6500DFB08D /* FLMusicPlayer */;
+			targetProxy = 12F0BD0720691A6500DFB08D /* PBXContainerItemProxy */;
+		};
+		12F0BD1320691A6500DFB08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F0BCED20691A6500DFB08D /* FLMusicPlayer */;
+			targetProxy = 12F0BD1220691A6500DFB08D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12F0BCF720691A6500DFB08D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F0BCF820691A6500DFB08D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12F0BCFC20691A6500DFB08D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F0BCFD20691A6500DFB08D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F0BD1820691A6500DFB08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12F0BD1920691A6500DFB08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12F0BD1B20691A6500DFB08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				GCC_PREFIX_HEADER = FLMusicPlayer/Other/FLMusicHeader.h;
+				INFOPLIST_FILE = FLMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		12F0BD1C20691A6500DFB08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				GCC_PREFIX_HEADER = FLMusicPlayer/Other/FLMusicHeader.h;
+				INFOPLIST_FILE = FLMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		12F0BD1E20691A6500DFB08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				INFOPLIST_FILE = FLMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLMusicPlayer.app/FLMusicPlayer";
+			};
+			name = Debug;
+		};
+		12F0BD1F20691A6500DFB08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				INFOPLIST_FILE = FLMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLMusicPlayer.app/FLMusicPlayer";
+			};
+			name = Release;
+		};
+		12F0BD2120691A6500DFB08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				INFOPLIST_FILE = FLMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLMusicPlayer;
+			};
+			name = Debug;
+		};
+		12F0BD2220691A6500DFB08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6625VD7T97;
+				INFOPLIST_FILE = FLMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FoxPower.FLMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLMusicPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12F0BCE920691A6500DFB08D /* Build configuration list for PBXProject "FLMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F0BD1820691A6500DFB08D /* Debug */,
+				12F0BD1920691A6500DFB08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F0BD1A20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F0BD1B20691A6500DFB08D /* Debug */,
+				12F0BD1C20691A6500DFB08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F0BD1D20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F0BD1E20691A6500DFB08D /* Debug */,
+				12F0BD1F20691A6500DFB08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F0BD2020691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F0BD2120691A6500DFB08D /* Debug */,
+				12F0BD2220691A6500DFB08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12F0BCE620691A6500DFB08D /* Project object */;
+}
