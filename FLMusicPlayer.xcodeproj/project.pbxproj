@@ -23,6 +23,10 @@
 		12F0BD43206925C100DFB08D /* FLAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD42206925C100DFB08D /* FLAudioSession.m */; };
 		12F0BD472069358900DFB08D /* FLDataPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD462069358900DFB08D /* FLDataPath.m */; };
 		12F0BD4D2069391500DFB08D /* yzgf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BD4C2069391500DFB08D /* yzgf.mp3 */; };
+		705F078B5A131F32F4EBF7BA /* libPods-FLMusicPlayerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */; };
+		984EA99A206A15F300A188DC /* FLAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 984EA999206A15F300A188DC /* FLAudioFileStream.m */; };
+		D38633FAE9F1FFF1CA350C0E /* libPods-FLMusicPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */; };
+		EEA0901B9BA324E460AB3AE0 /* libPods-FLMusicPlayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE796E9B1C00DFE5967DFD99 /* libPods-FLMusicPlayerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,17 @@
 		12F0BD452069358900DFB08D /* FLDataPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLDataPath.h; sourceTree = "<group>"; };
 		12F0BD462069358900DFB08D /* FLDataPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLDataPath.m; sourceTree = "<group>"; };
 		12F0BD4C2069391500DFB08D /* yzgf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yzgf.mp3; sourceTree = "<group>"; };
+		23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMusicPlayerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMusicPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		368F7FBE5FB6E8BD2741EFA5 /* Pods-FLMusicPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6511984075759EA71D0DE8E3 /* Pods-FLMusicPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerUITests/Pods-FLMusicPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7533302863FE7EC9F3234BCF /* Pods-FLMusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		984EA998206A15F300A188DC /* FLAudioFileStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAudioFileStream.h; sourceTree = "<group>"; };
+		984EA999206A15F300A188DC /* FLAudioFileStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAudioFileStream.m; sourceTree = "<group>"; };
+		9A54F1E7218DE9E7BD53690C /* Pods-FLMusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		CE47012579E94C3988D949F1 /* Pods-FLMusicPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerUITests/Pods-FLMusicPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9271A7AF47787BA747F391C /* Pods-FLMusicPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE796E9B1C00DFE5967DFD99 /* libPods-FLMusicPlayerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMusicPlayerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38633FAE9F1FFF1CA350C0E /* libPods-FLMusicPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA0901B9BA324E460AB3AE0 /* libPods-FLMusicPlayerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705F078B5A131F32F4EBF7BA /* libPods-FLMusicPlayerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +126,8 @@
 				12F0BD0920691A6500DFB08D /* FLMusicPlayerTests */,
 				12F0BD1420691A6500DFB08D /* FLMusicPlayerUITests */,
 				12F0BCEF20691A6500DFB08D /* Products */,
+				9693B9423E65AAEF83AC3D38 /* Pods */,
+				DA0E3D661A5CFD3ADEDF1FC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +255,8 @@
 			children = (
 				12F0BD41206925C100DFB08D /* FLAudioSession.h */,
 				12F0BD42206925C100DFB08D /* FLAudioSession.m */,
+				984EA998206A15F300A188DC /* FLAudioFileStream.h */,
+				984EA999206A15F300A188DC /* FLAudioFileStream.m */,
 			);
 			path = FLAudioKit;
 			sourceTree = "<group>";
@@ -264,6 +286,29 @@
 			path = Musics;
 			sourceTree = "<group>";
 		};
+		9693B9423E65AAEF83AC3D38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A54F1E7218DE9E7BD53690C /* Pods-FLMusicPlayer.debug.xcconfig */,
+				7533302863FE7EC9F3234BCF /* Pods-FLMusicPlayer.release.xcconfig */,
+				F9271A7AF47787BA747F391C /* Pods-FLMusicPlayerTests.debug.xcconfig */,
+				368F7FBE5FB6E8BD2741EFA5 /* Pods-FLMusicPlayerTests.release.xcconfig */,
+				CE47012579E94C3988D949F1 /* Pods-FLMusicPlayerUITests.debug.xcconfig */,
+				6511984075759EA71D0DE8E3 /* Pods-FLMusicPlayerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA0E3D661A5CFD3ADEDF1FC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */,
+				FE796E9B1C00DFE5967DFD99 /* libPods-FLMusicPlayerTests.a */,
+				23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F0BD1A20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayer" */;
 			buildPhases = (
+				502BECB36CDAFF01D36DF652 /* [CP] Check Pods Manifest.lock */,
 				12F0BCEA20691A6500DFB08D /* Sources */,
 				12F0BCEB20691A6500DFB08D /* Frameworks */,
 				12F0BCEC20691A6500DFB08D /* Resources */,
+				0B9699646905E17FB3A443CB /* [CP] Embed Pods Frameworks */,
+				635C520A8A3B6F0A0D90C6A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F0BD1D20691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerTests" */;
 			buildPhases = (
+				3B968FFDA08C08B27FF447EB /* [CP] Check Pods Manifest.lock */,
 				12F0BD0220691A6500DFB08D /* Sources */,
 				12F0BD0320691A6500DFB08D /* Frameworks */,
 				12F0BD0420691A6500DFB08D /* Resources */,
+				5617F4B949A1260FA4CD8896 /* [CP] Embed Pods Frameworks */,
+				C0E7D2ED79F5E771C59E9C54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F0BD2020691A6500DFB08D /* Build configuration list for PBXNativeTarget "FLMusicPlayerUITests" */;
 			buildPhases = (
+				2E1AB1AC50E407E7B20A600C /* [CP] Check Pods Manifest.lock */,
 				12F0BD0D20691A6500DFB08D /* Sources */,
 				12F0BD0E20691A6500DFB08D /* Frameworks */,
 				12F0BD0F20691A6500DFB08D /* Resources */,
+				94B9E332F2731795654C776F /* [CP] Embed Pods Frameworks */,
+				1A39A64FF2FEBC22F0511A21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,6 +450,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B9699646905E17FB3A443CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A39A64FF2FEBC22F0511A21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayerUITests/Pods-FLMusicPlayerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E1AB1AC50E407E7B20A600C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLMusicPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B968FFDA08C08B27FF447EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLMusicPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502BECB36CDAFF01D36DF652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLMusicPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5617F4B949A1260FA4CD8896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635C520A8A3B6F0A0D90C6A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94B9E332F2731795654C776F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayerUITests/Pods-FLMusicPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E7D2ED79F5E771C59E9C54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12F0BCEA20691A6500DFB08D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -404,6 +605,7 @@
 				12F0BD3D20691F5800DFB08D /* FLLoginViewController.m in Sources */,
 				12F0BD43206925C100DFB08D /* FLAudioSession.m in Sources */,
 				12F0BCF620691A6500DFB08D /* ViewController.m in Sources */,
+				984EA99A206A15F300A188DC /* FLAudioFileStream.m in Sources */,
 				12F0BD472069358900DFB08D /* FLDataPath.m in Sources */,
 				12F0BD0120691A6500DFB08D /* main.m in Sources */,
 				12F0BCF320691A6500DFB08D /* AppDelegate.m in Sources */,
@@ -569,6 +771,7 @@
 		};
 		12F0BD1B20691A6500DFB08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A54F1E7218DE9E7BD53690C /* Pods-FLMusicPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +788,7 @@
 		};
 		12F0BD1C20691A6500DFB08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7533302863FE7EC9F3234BCF /* Pods-FLMusicPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +805,7 @@
 		};
 		12F0BD1E20691A6500DFB08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9271A7AF47787BA747F391C /* Pods-FLMusicPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +821,7 @@
 		};
 		12F0BD1F20691A6500DFB08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368F7FBE5FB6E8BD2741EFA5 /* Pods-FLMusicPlayerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +837,7 @@
 		};
 		12F0BD2120691A6500DFB08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE47012579E94C3988D949F1 /* Pods-FLMusicPlayerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6625VD7T97;
@@ -645,6 +852,7 @@
 		};
 		12F0BD2220691A6500DFB08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6511984075759EA71D0DE8E3 /* Pods-FLMusicPlayerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6625VD7T97;
