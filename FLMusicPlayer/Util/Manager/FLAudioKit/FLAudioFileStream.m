@@ -189,13 +189,55 @@ static void FLAudioFileStreamPacketsCallBack(void *inClientData, UInt32 inNumber
             OSStatus status = AudioFileStreamGetProperty(_audioFileStreamID, kAudioFileStreamProperty_FormatList, &formatListSize, formatList);
             if (status == noErr) {
                 UInt32 supportedFormatSize;
-//                status = AudioFileStreamGetProperty(<#AudioFileStreamID  _Nonnull inAudioFileStream#>, <#AudioFileStreamPropertyID inPropertyID#>, <#UInt32 * _Nonnull ioPropertyDataSize#>, <#void * _Nonnull outPropertyData#>)
+                status = AudioFormatGetPropertyInfo(kAudioFormatProperty_DecodeFormatIDs, 0, NULL, &supportedFormatSize);
+                if (status != noErr) {
+                    free(formatList);
+                    return;
+                }
+                
+                UInt32 supportedFormatCount = supportedFormatSize / sizeof(OSType);
+                OSType *supportedFormats = (OSType *)malloc(supportedFormatSize);
+                status = AudioFormatGetProperty(kAudioFormatProperty_DecodeFormatIDs, 0, NULL, &supportedFormatSize, supportedFormats);
+                if (status != noErr) {
+                    free(formatList);
+                    free(supportedFormats);
+                    return;
+                }
+                
+                for (int i = 0; i * sizeof(AudioFormatListItem) < formatListSize; i++) {
+                    AudioStreamBasicDescription formate = formatList[i].mASBD;
+                    for (UInt32 j = 0; j < supportedFormatSize; ++j) {
+                        if (formate.mFormatID == supportedFormats[j]) {
+                            _format = formate;
+                            [self calculatepPacketDuration];
+                            break;
+                        }
+                    }
+                }
+                free(supportedFormats);
             }
+            
+            free(formatList);
         }
     }
 }
 
 - (void)handleAudioFileStreamPackets:(const void *)packets numberOfBytes:(UInt32)numberOfBytes numberOfPackets:(UInt32)numberOfPackets packetDescriptions:(AudioStreamPacketDescription *)packetDescriptioins {
     
+    
+    if (_discontinuous) {
+        _discontinuous = NO;
+    }
+    
+    if (numberOfBytes == 0 || numberOfPackets == 0) {
+        return;
+    }
+    BOOL deletePackDesc = NO;
+    if (packetDescriptioins == NULL) {
+        deletePackDesc = YES;
+        UInt32 packetSize = numberOfBytes / numberOfPackets;
+        AudioStreamPacketDescription *descriptions = (AudioStreamPacketDescription *)malloc(sizeof(AudioStreamPacketDescription) * numberOfPackets);
+        
+    }
 }
 @end
