@@ -23,6 +23,7 @@
 		12F0BD43206925C100DFB08D /* FLAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD42206925C100DFB08D /* FLAudioSession.m */; };
 		12F0BD472069358900DFB08D /* FLDataPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD462069358900DFB08D /* FLDataPath.m */; };
 		12F0BD4D2069391500DFB08D /* yzgf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12F0BD4C2069391500DFB08D /* yzgf.mp3 */; };
+		12F0BD50206D222000DFB08D /* FLParsedAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD4F206D222000DFB08D /* FLParsedAudioData.m */; };
 		705F078B5A131F32F4EBF7BA /* libPods-FLMusicPlayerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */; };
 		984EA99A206A15F300A188DC /* FLAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 984EA999206A15F300A188DC /* FLAudioFileStream.m */; };
 		D38633FAE9F1FFF1CA350C0E /* libPods-FLMusicPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */; };
@@ -77,6 +78,8 @@
 		12F0BD452069358900DFB08D /* FLDataPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLDataPath.h; sourceTree = "<group>"; };
 		12F0BD462069358900DFB08D /* FLDataPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLDataPath.m; sourceTree = "<group>"; };
 		12F0BD4C2069391500DFB08D /* yzgf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yzgf.mp3; sourceTree = "<group>"; };
+		12F0BD4E206D222000DFB08D /* FLParsedAudioData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLParsedAudioData.h; sourceTree = "<group>"; };
+		12F0BD4F206D222000DFB08D /* FLParsedAudioData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLParsedAudioData.m; sourceTree = "<group>"; };
 		23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMusicPlayerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMusicPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368F7FBE5FB6E8BD2741EFA5 /* Pods-FLMusicPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 				12F0BD42206925C100DFB08D /* FLAudioSession.m */,
 				984EA998206A15F300A188DC /* FLAudioFileStream.h */,
 				984EA999206A15F300A188DC /* FLAudioFileStream.m */,
+				12F0BD4E206D222000DFB08D /* FLParsedAudioData.h */,
+				12F0BD4F206D222000DFB08D /* FLParsedAudioData.m */,
 			);
 			path = FLAudioKit;
 			sourceTree = "<group>";
@@ -607,6 +612,7 @@
 				12F0BCF620691A6500DFB08D /* ViewController.m in Sources */,
 				984EA99A206A15F300A188DC /* FLAudioFileStream.m in Sources */,
 				12F0BD472069358900DFB08D /* FLDataPath.m in Sources */,
+				12F0BD50206D222000DFB08D /* FLParsedAudioData.m in Sources */,
 				12F0BD0120691A6500DFB08D /* main.m in Sources */,
 				12F0BCF320691A6500DFB08D /* AppDelegate.m in Sources */,
 				12F0BD2F20691BDC00DFB08D /* UIView+FLCommon.m in Sources */,

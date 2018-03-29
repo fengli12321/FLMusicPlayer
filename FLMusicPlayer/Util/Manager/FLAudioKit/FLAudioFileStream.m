@@ -7,6 +7,11 @@
 //
 
 #import "FLAudioFileStream.h"
+#import "FLParsedAudioData.h"
+
+#define BitRateEstimationMaxPackets 5000
+#define BitRateEstimationMinPackets 10
+
 
 @interface FLAudioFileStream() {
 @private
@@ -143,6 +148,13 @@ static void FLAudioFileStreamPacketsCallBack(void *inClientData, UInt32 inNumber
 
 #pragma mark - callBack
 
+- (void)calculateBiteRate {
+    if (_packetDuration && _processPacketsCount > BitRateEstimationMinPackets && _processPacketsCount < BitRateEstimationMaxPackets) {
+        double averagePacketByteSize = _processPacketsSizeTotal / _processPacketsCount;
+        _bitRate = 8.0 * averagePacketByteSize / _packetDuration;
+    }
+}
+
 - (void)calculateDuration {
     if (_fileSize > 0 && _bitRate > 0) {
         _duration = (_fileSize - _dataOffset) * 8.0 / _bitRate;
@@ -237,7 +249,37 @@ static void FLAudioFileStreamPacketsCallBack(void *inClientData, UInt32 inNumber
         deletePackDesc = YES;
         UInt32 packetSize = numberOfBytes / numberOfPackets;
         AudioStreamPacketDescription *descriptions = (AudioStreamPacketDescription *)malloc(sizeof(AudioStreamPacketDescription) * numberOfPackets);
+        for (int i = 0; i < numberOfPackets; i++) {
+            UInt32 packetOffset = packetSize * i;
+            descriptions[i].mStartOffset = packetOffset;
+            descriptions[i].mVariableFramesInPacket = 0;
+            if (i == numberOfPackets - 1) {
+                descriptions[i].mDataByteSize = numberOfBytes - packetOffset;
+            } else {
+                descriptions[i].mDataByteSize = packetSize;
+            }
+        }
+        packetDescriptioins = descriptions;
+    }
+    
+    NSMutableArray *parsedDataArray = [NSMutableArray array];
+    for (int i = 0; i < numberOfPackets; ++i) {
+        SInt64 packetOffset = packetDescriptioins[i].mStartOffset;
+        FLParsedAudioData *parsedData = [FLParsedAudioData parsedAudioDataWithBytes:packets + packetOffset packetDescription:packetDescriptioins[i]];
         
+        [parsedDataArray addObject:parsedData];
+        
+        if (_processPacketsCount < BitRateEstimationMaxPackets) {
+            _processPacketsSizeTotal += parsedData.packetDescription.mDataByteSize;
+            _processPacketsCount += 1;
+            [self calculateBiteRate];
+            [self calculateDuration];
+        }
+    }
+    
+    [_delegate audioFileStream:self audioDataParsed:parsedDataArray];
+    if (deletePackDesc) {
+        free(packetDescriptioins);
     }
 }
 @end
