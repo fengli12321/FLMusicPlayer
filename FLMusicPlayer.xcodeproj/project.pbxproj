@@ -26,6 +26,8 @@
 		12F0BD50206D222000DFB08D /* FLParsedAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0BD4F206D222000DFB08D /* FLParsedAudioData.m */; };
 		705F078B5A131F32F4EBF7BA /* libPods-FLMusicPlayerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8DFDD625BE0897EB2FB24 /* libPods-FLMusicPlayerUITests.a */; };
 		984EA99A206A15F300A188DC /* FLAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 984EA999206A15F300A188DC /* FLAudioFileStream.m */; };
+		984EAA092072161B00A188DC /* FLAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 984EAA082072161B00A188DC /* FLAudioBuffer.m */; };
+		984EAA0C207221D800A188DC /* FLAudioOutputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 984EAA0B207221D800A188DC /* FLAudioOutputQueue.m */; };
 		D38633FAE9F1FFF1CA350C0E /* libPods-FLMusicPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A5365B0C471C4128E208E9 /* libPods-FLMusicPlayer.a */; };
 		EEA0901B9BA324E460AB3AE0 /* libPods-FLMusicPlayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE796E9B1C00DFE5967DFD99 /* libPods-FLMusicPlayerTests.a */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,10 @@
 		7533302863FE7EC9F3234BCF /* Pods-FLMusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		984EA998206A15F300A188DC /* FLAudioFileStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAudioFileStream.h; sourceTree = "<group>"; };
 		984EA999206A15F300A188DC /* FLAudioFileStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAudioFileStream.m; sourceTree = "<group>"; };
+		984EAA072072161B00A188DC /* FLAudioBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAudioBuffer.h; sourceTree = "<group>"; };
+		984EAA082072161B00A188DC /* FLAudioBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAudioBuffer.m; sourceTree = "<group>"; };
+		984EAA0A207221D800A188DC /* FLAudioOutputQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAudioOutputQueue.h; sourceTree = "<group>"; };
+		984EAA0B207221D800A188DC /* FLAudioOutputQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAudioOutputQueue.m; sourceTree = "<group>"; };
 		9A54F1E7218DE9E7BD53690C /* Pods-FLMusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayer/Pods-FLMusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		CE47012579E94C3988D949F1 /* Pods-FLMusicPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerUITests/Pods-FLMusicPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9271A7AF47787BA747F391C /* Pods-FLMusicPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLMusicPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLMusicPlayerTests/Pods-FLMusicPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +268,10 @@
 				984EA999206A15F300A188DC /* FLAudioFileStream.m */,
 				12F0BD4E206D222000DFB08D /* FLParsedAudioData.h */,
 				12F0BD4F206D222000DFB08D /* FLParsedAudioData.m */,
+				984EAA072072161B00A188DC /* FLAudioBuffer.h */,
+				984EAA082072161B00A188DC /* FLAudioBuffer.m */,
+				984EAA0A207221D800A188DC /* FLAudioOutputQueue.h */,
+				984EAA0B207221D800A188DC /* FLAudioOutputQueue.m */,
 			);
 			path = FLAudioKit;
 			sourceTree = "<group>";
@@ -616,6 +626,8 @@
 				12F0BD0120691A6500DFB08D /* main.m in Sources */,
 				12F0BCF320691A6500DFB08D /* AppDelegate.m in Sources */,
 				12F0BD2F20691BDC00DFB08D /* UIView+FLCommon.m in Sources */,
+				984EAA0C207221D800A188DC /* FLAudioOutputQueue.m in Sources */,
+				984EAA092072161B00A188DC /* FLAudioBuffer.m in Sources */,
 				12F0BD3520691EF300DFB08D /* FLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
